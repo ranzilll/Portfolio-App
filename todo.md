@@ -17,3 +17,4 @@
 - [ ] I have commited my code regularly
 - [ ] I have asked questions when I felt stuck and not tried to mug stuff
 - [ ] I understand basics of markdown
+
