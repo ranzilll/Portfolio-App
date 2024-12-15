@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #ff9f35;
+    --text-color: #f2f2f2;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+}
+
+body {
+    background-color: black;
+    color: var(--text-color);
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px 0px 45px; 
+    word-spacing: 2px;
+}
+
+.name {
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    align-items: center;
+    font-size: 26.4px;
+    font-weight: bold;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.name .braces {
+    color: var(--primary-color);
+    margin-left: 2.5px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px; /* Add space between items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.orangehover{
+    border-bottom: 1px dashed #ff9f35;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+    font-size: 17.6px;
+
+    &:hover{
+        border: none;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+}
+/* container2 */
+.toggleswitch svg{
+    color: var(--text-color);
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.toggleswitch svg path{
+    fill: var(--text-color); /* Set fill to white or your desired color */
+}

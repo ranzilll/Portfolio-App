@@ -18,3 +18,7 @@
 - [ ] I have asked questions when I felt stuck and not tried to mug stuff
 - [ ] I understand basics of markdown
 
+## Task Update 
+- [ ] Header with the toggle switch is ready (still need to add toggle functionality for dark mode and light mode)
+- [ ] I also understood the Basics of markdown preview
+
