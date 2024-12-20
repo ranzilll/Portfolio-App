@@ -14,49 +14,169 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
   <title>Ranzil Castelino</title>
 </head>
 
 <body>
-  <header id="home">
+  <!-- header section  -->
+  <header class="section" id="home">
     <a class="name" href="#home">Ranzil Castelino <span class="braces">{ }</span></a>
     <ul class="navbar">
-      <li class="about orangehover">about</li>
-      <li class="skills orangehover">skills</li>
-      <li class="work orangehover">work</li>
-      <li class="resume orangehover">resume</li>
+      <li class="about sidemenu"><a href="#introduction">about</a></li>
+      <li class="skills sidemenu"><a href="#skills">skills</a></li>
+      <li class="work sidemenu"><a href="">work</a></li>
+      <li class="resume sidemenu"><a href="">resume</a></li>
     </ul>
 
     <div class="hamburger">
       <div class="hambars">
-
+  
       </div>
     </div>
-
-    <div class="sidecontent">
-      <ul class="sidebar">
-        <li class="about sidemenu">about</li>
-        <li class="skills sidemenu">skills</li>
-        <li class="work sidemenu">work</li>
-        <li class="resume sidemenu">resume</li>
-      </ul>
-    </div>
-
-
   </header>
+  <!-- end of header section  -->
 
-  <div class="container">
-    <div class="toggleswitch" id="toggleswitch">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 50 50">
-        <path
-          d="M24.05 46.55 17.3 40H8v-9.3L1.3 24 8 17.3V8h9.3l6.75-6.7L30.7 8H40v9.3l6.7 6.7-6.7 6.7V40h-9.3Zm0-9.55q5.4 0 9.175-3.8Q37 29.4 37 23.95q0-5.4-3.775-9.175Q29.45 11 24.05 11Zm0 5.35 5.4-5.35H37v-7.55L42.45 24 37 18.55V11h-7.55l-5.4-5.45-5.5 5.45H11v7.55L5.55 24 11 29.45V37h7.5ZM24 23.95Z">
-        </path>
-      </svg>
+  <!-- Chicken Burger  -->
+  <!-- <div class="hamburger">
+    <div class="hambars">
+
+    </div>
+  </div> -->
+  <!-- End of Chicken Burger  -->
+
+  <!-- Side Content  -->
+  <div class="sidecontent">
+    <ul class="sidebar">
+      <li class="about sidemenu"><a href="#introduction">About</a></li>
+      <li class="skills sidemenu"><a href="#skills">Skills</a></li>
+      <li class="work sidemenu"><a href="">Work</a></li>
+      <li class="resume sidemenu"><a href="">Resume</a></li>
+    
+    </ul>
+  </div>
+  <!-- End of Side Content  -->
+
+  <!-- toggle switch  -->
+  <div class="toggleswitch" id="toggleswitch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 50 50">
+      <path
+        d="M24.05 46.55 17.3 40H8v-9.3L1.3 24 8 17.3V8h9.3l6.75-6.7L30.7 8H40v9.3l6.7 6.7-6.7 6.7V40h-9.3Zm0-9.55q5.4 0 9.175-3.8Q37 29.4 37 23.95q0-5.4-3.775-9.175Q29.45 11 24.05 11Zm0 5.35 5.4-5.35H37v-7.55L42.45 24 37 18.55V11h-7.55l-5.4-5.45-5.5 5.45H11v7.55L5.55 24 11 29.45V37h7.5ZM24 23.95Z">
+      </path>
+    </svg>
+  </div>
+  <!-- end of toggle switch  -->
+
+  <!-- introduction  -->
+  <div class="introduction" id="introduction">
+    <h3>Hello <span class="handemj">&#128075;</span></h3>
+    <h3>I'm Ranzil.</h3>
+    <svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" class="">
+      <g id="arrow-wrap" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow" transform="translate(-904.000000, -343.000000)" stroke="#ff9f35" stroke-width="2">
+          <path
+            d="M912.545285,345 L946.743,379.198 L946.74357,345.246688 L956,345.246688 L956,395 L906.246688,395 L906.246688,385.74357 L940.198,385.743 L906,351.545285 L912.545285,345 Z"
+            id="wrap-arrow1a"></path>
+        </g>
+      </g>
+    </svg>
+    <p class="typew">a
+      <a href="" class="typewrite" data-period="2000"
+        data-type='[ "Frontend Developer", "Perpetual Learner", "Coffee Lover&#9749;"]'>
+        <span class="wrap"></span>
+      </a>
+    </p>
+    <p class="aboutmyself">
+      passionate about creating websites that prioritize user
+      experience. I hold a Bachelor's degree in Information Technology from
+      <a class="clg" href="https://rdnational.ac.in/">RD National College, Bandra</a>. Though I worked as an application
+      support engineer for 1+ years, my curiosity led me to explore web development in my free time.
+    </p>
+    <p class="secparaintro">
+      Since then, I’ve been building websites using HTML, CSS, and JavaScript, and I’m now advancing my skills in React
+      and modern web
+      technologies.
+    </p>
+
+    <p class="myenjoyment">
+      I enjoy playing <span class="myenj">⚽</span>,
+      listening to <span class="myenj">&#127911;</span>
+      in my free <span class="myenj">⏰</span>!
+    </p>
+
+  </div>
+  <!-- end of intro  -->
+
+  <div class="section skillstools" id="skills">
+    <h3 class="skto">Skills & Tools <hr></h3>
+    <p>
+      Programming languages, frameworks, tools & products I've 
+      either had
+       hands-down experience with or 
+       I've worked on and tried out at least once and would
+       not call myself a Pro. I primarily work with 
+       vanilla Javascript & CSS frameworks.
+    </p>
+    <div class="skillimgs">
+      <div class="html tech">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"/>
+        </svg><p class="skilltxt">HTML </p>    
+      </div>
+      <div class="css tech">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="m3 2 1.578 17.834L12 22l7.468-2.165L21 2H3Zm13.3 14.722-4.293 1.204H12l-4.297-1.204-.297-3.167h2.108l.15 1.526 2.335.639 2.34-.64.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506l-.954 10.71Z"/>
+        </svg><p class="skilltxt">CSS </p>        
+      </div>
+      <div class="js tech">
+        <img src="src/assets/js.png" alt="">
+        <p class="skilltxt">Javascript </p>  
+      </div>
+      <div class="react tech">
+        <img src="src/assets/science.png" alt="">
+        <p class="skilltxt">React </p>  
+      </div>
+      <div class="sql tech">
+        <img src="src/assets/database.png" alt="">
+        <p class="skilltxt">SQL </p>  
+      </div>
+      <div class="Jira tech">
+        <img src="src/assets/jira.png" alt="">
+        <p class="skilltxt">Jira </p>  
+      </div>
+      <div class="figma tech">
+        <img src="src/assets/figma.png" alt="">
+        <p class="skilltxt">Figma </p>  
+      </div>
+      <div class="github tech">
+        <img src="src/assets/github (1).png" alt="">
+        <p class="skilltxt">Github </p>  
+      </div>
+      <div class="jquery tech">
+        <img src="src/assets/web.png" alt="">
+        <p class="skilltxt silltxtjq">Jquery </p>  
+      </div>
+      <div class="bootsrap tech">
+        <img src="src/assets/bootstrap.png" alt="">
+        <p class="skilltxt">Bootstrap </p>  
+      </div>
     </div>
   </div>
 
+  <!-- <div id="fullpage">
+    <div class="section">
+      <div class="slide">Slide 1</div>
+      <div class="section">Section 2</div>
+      <div class="section">Section 3</div>
+    </div>
+   
+  </div> -->
 
   <script type="module" src="/src/main.js"></script>
+
 </body>
 
 </html>
