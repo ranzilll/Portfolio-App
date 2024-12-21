@@ -38,3 +38,10 @@
 - [ ] Start working on the skills and tools section. Section should all the images and bits aligned like the design
 - [ ] Update favicon of the site. 
 - [ ] Implement the library https://alvarotrigo.com/fullPage/ into the project.
+## Update 21/12
+  - [ ]  While i am trying to implement this
+  Implement the library https://alvarotrigo.com/fullPage/ into the project. 
+  i am facing alot of issues 
+- [ ] I have successfully added the link in my html file and asked chatgpt to help me and they gave a code snippet and i edited my sections as per my requirement and updated it on my js and css files but i could'nt find the styling for the ---bullets---.
+- [ ] I even tried editing it through dev tools and then pasting the code in my CSS but hardluck for me again.
+`Could you kindly review my code and provide feedback? I'd love to improve and would appreciate your help with the doubts I've mentioned.`

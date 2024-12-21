@@ -119,8 +119,6 @@ header {
 
 .introduction {
     display: block;
-    margin-top: 13%;
-    margin-left: 10%;
     font-size: 17px;
     width: 82%;
 }
@@ -179,9 +177,6 @@ header {
 /* skills  */
 .skillstools {
     display: block;
-    margin-left: 10%;
-    margin-top: 5%;
-
     p {
         width: 82%;
     }
@@ -405,7 +400,7 @@ body.light-theme {
         flex-direction: column;
         height: 90vh;
         width: 82%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
       }
 }
 
@@ -502,9 +497,7 @@ body.light-theme {
 
     .sidecontent.show {
         display: flex;
-        /* Make it visible */
         transform: translateX(0);
-        /* Slide in from the side */
     }
 
     .sidebar {
@@ -584,14 +577,59 @@ body.light-theme {
         flex-direction: column;
         height: 150vh;
         width: 90%;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
+      }
+    /* end styling skills */
+
+    /* styling fullpage scrolling  */
+    #fullpage {
+        margin-top: 13%;
+        margin-left: 10%;
+        font-size: 17px;
+        width: 82%;
       }
 
-    /* end styling skills */
+    .section {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 88%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+    .skillstools{
+        padding-top: 0px;
+        margin-top: 0px;
+
+    }
+
+      /* end of styling scrolling page  */
+
+      /* styling toggle  */
+
+      .toggleswitch svg {
+        color: var(--text-color);
+        font-size: 30px;
+        height: 40px;
+        width: 50px;
+        position: absolute;
+        top: 15%;
+        right: 6%;
+        cursor: pointer;
+        z-index: 1;
+
+       /*end of styling toggle  */
+    }
+
+    .aboutmyself{
+        font-weight: lighter;
+    }
 }
 
 #fullpage {
     position: relative;
+    overflow: hidden;
   }
 
   .section {
@@ -599,8 +637,21 @@ body.light-theme {
     flex-direction: column;
     height: 90vh;
     width: 82%;
-    border: 2px solid green;
+    margin-bottom: 25px;
   }
 
+  #fullpage {
+    /* margin-top: 13%; */
+    margin-left: 10%;
+    font-size: 17px;
+    width: 82%;
+  }
+
+  /* #fullpage .fp-nav ul li a span {
+    background-color: #ff5722 !important;
+  }
   
+  #fullpage .fp-nav ul li a.active span {
+    background-color: #4caf50 !important;
+  } */
 
