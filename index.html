@@ -16,13 +16,12 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
   <title>Ranzil Castelino</title>
 </head>
 
 <body>
   <!-- header section  -->
-  <header class="section" id="home">
+  <header id="home section">
     <a class="name" href="#home">Ranzil Castelino <span class="braces">{ }</span></a>
     <ul class="navbar">
       <li class="about sidemenu"><a href="#introduction">about</a></li>
@@ -50,10 +49,15 @@
   <!-- Side Content  -->
   <div class="sidecontent">
     <ul class="sidebar">
-      <li class="about sidemenu"><a href="#introduction">About</a></li>
+      <!-- <li class="about sidemenu"><a href="#introduction">About</a></li>
       <li class="skills sidemenu"><a href="#skills">Skills</a></li>
       <li class="work sidemenu"><a href="">Work</a></li>
-      <li class="resume sidemenu"><a href="">Resume</a></li>
+      <li class="resume sidemenu"><a href="">Resume</a></li> -->
+
+      <li class="about sidemenu"><a href="#introduction" data-menuanchor="introduction">About</a></li>
+      <li class="skills sidemenu"><a href="#skills" data-menuanchor="skills">Skills</a></li>
+      <li class="work sidemenu"><a href="#work" data-menuanchor="work">Work</a></li>
+      <li class="resume sidemenu"><a href="#resume" data-menuanchor="resume">Resume</a></li>
     
     </ul>
   </div>
@@ -70,7 +74,8 @@
   <!-- end of toggle switch  -->
 
   <!-- introduction  -->
-  <div class="introduction" id="introduction">
+  <div class="fullpage">
+  <div class="introduction section" id="introduction">
     <h3>Hello <span class="handemj">&#128075;</span></h3>
     <h3>I'm Ranzil.</h3>
     <svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -176,6 +181,9 @@
   </div> -->
 
   <script type="module" src="/src/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
+
+</div>
 
 </body>
 

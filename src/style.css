@@ -399,6 +399,14 @@ body.light-theme {
     /* end of styling side bar  */
 
     /* end of hamburger menu  */
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        width: 82%;
+        border: 2px solid red;
+      }
 }
 
 /* for phones  */
@@ -571,7 +579,28 @@ body.light-theme {
         width: 55px;
     }
 
+    .section {
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        width: 90%;
+        border: 2px solid blue;
+      }
+
     /* end styling skills */
 }
 
+#fullpage {
+    position: relative;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 82%;
+    border: 2px solid green;
+  }
+
+  
 

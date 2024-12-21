@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", () => {
+    new fullpage('#fullpage', {
+      autoScrolling: true,
+      navigation: true,
+      anchors: ['home', 'introduction', 'skills', 'work', 'resume'],
+      navigationTooltips: ['Home', 'About Me', 'Skills', 'Work', 'Resume'],
+      showActiveTooltip: true,
+      sectionsColor: ['#282c34', '#ff9f35', '#282c34', '#ff9f35', '#282c34'],
+      slidesNavigation: true,
+      slidesNavPosition: 'bottom',
+      scrollBar: true,
+    });
+  });
+
+  document.querySelector('.hamburger').addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent fullPage.js from capturing the event
+    document.querySelector('.sidecontent').classList.toggle('active');
+  });
+
+  document.querySelector('.toggleswitch').addEventListener('click', (e) => {
+    e.stopPropagation();
+    // Perform your toggle functionality
+  });
+
+
+
+
 const toggleswitch = document.getElementById('toggleswitch');
 const hamburger = document.querySelector(".hamburger");
 const sidecontent = document.querySelector(".sidecontent");
@@ -81,6 +108,7 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
 
 
 
