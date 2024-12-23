@@ -646,11 +646,32 @@ body.light-theme {
     width: 82%;
   }
 
-  /* #fullpage .fp-nav ul li a span {
+  #fullpage .fp-nav ul li a span {
     background-color: #ff5722 !important;
   }
   
   #fullpage .fp-nav ul li a.active span {
     background-color: #4caf50 !important;
+  }
+
+  /* span{
+    background-color: #4caf50 !important;
+  } */
+
+ul li a span{
+    border: 1px solid var(--primary-color) !important;
+    background-color: var(--primary-color) !important;
+}
+
+ ul li a.active span {
+    border: 2px solid var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
+    height: 10px !important;
+    width: 10px !important;
+  }
+
+  /* ul li a.active span {
+    height: 20px !important;
+    width: 20px !important;
   } */
 
