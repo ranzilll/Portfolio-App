@@ -3,17 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
       autoScrolling: true,
       navigation: true,
       navigationPosition: 'right', 
-    //   anchors: ['home', 'introduction', 'skills', 'work', 'resume'],
-      anchors: ['introduction', 'skills'],
-    //   navigationTooltips: ['Home', 'About Me', 'Skills', 'Work', 'Resume'],
       showActiveTooltip: true,
-    //   sectionsColor: ['#282c34', '#ff9f35', '#282c34', '#ff9f35', '#282c34'],
       slidesNavigation: true,
       slidesNavPosition: 'bottom',
       scrollBar: true,
       showActiveTooltip: true, 
-      scrollingSpeed: 1000,
-
       afterRender: () => {
         document.querySelectorAll('.fp-nav ul li a span').forEach((span) => {
           span.style.backgroundColor = '#ff5722'; // Default bullet color
