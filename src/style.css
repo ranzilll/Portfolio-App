@@ -191,15 +191,18 @@ header {
         width: 70px;
         height: 4px;
         margin-left: 10px;
+        margin-top: 15px;
         background-color: var(--primary-color);
         border: none;
     }
 }
 
 .skillimgs {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    width: 95%; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .html svg,
@@ -620,10 +623,6 @@ body.light-theme {
         z-index: 1;
 
        /*end of styling toggle  */
-    }
-
-    .aboutmyself{
-        font-weight: lighter;
     }
 }
 
