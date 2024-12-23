@@ -2,18 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     new fullpage('#fullpage', {
       autoScrolling: true,
       navigation: true,
-      navigationPosition: 'right', 
       showActiveTooltip: true,
-      slidesNavigation: true,
       slidesNavPosition: 'bottom',
       scrollBar: true,
-      showActiveTooltip: true, 
-      afterRender: () => {
-        document.querySelectorAll('.fp-nav ul li a span').forEach((span) => {
-          span.style.backgroundColor = '#ff5722'; // Default bullet color
-        });
-        document.querySelector('.fp-nav ul li a.active span').style.backgroundColor = '#4caf50'; // Active bullet
-    }
     });
   });
 
@@ -22,7 +13,6 @@ const hamburger = document.querySelector(".hamburger");
 const sidecontent = document.querySelector(".sidecontent");
 const sidemenu = document.querySelectorAll(".sidemenu");
 const sidebar = document.querySelectorAll(".sidebar");
-console.log(sidemenu);
 
 // toggleswitch code below 
 toggleswitch.addEventListener("click",()=>{
