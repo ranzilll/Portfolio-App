@@ -52,6 +52,16 @@ header {
     margin-left: 5.5px;
 }
 
+/* .navbar {
+    display: flex;
+    position: sticky;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
 .navbar li a {
     text-decoration: none;
     list-style: none;
@@ -63,13 +73,18 @@ header {
     font-weight: bold;
     letter-spacing: var(--letter-spacing);
 }
-
-.navbar li a:hover {
+.navbar li a:hover{
     color: var(--text-color);
     border-bottom: none;
-}
+}     */
 
-.navbar {
+/* gpt  */
+  
+body {
+    min-height: 200px;
+  }
+  
+  .navbar {
     display: flex;
     position: sticky;
     gap: 40px;
@@ -77,22 +92,47 @@ header {
     margin: 0;
     padding: 0;
     margin-right: 10px;
-}
-
-.orangehover {
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    font-size: 17.5px;
+    color: var(--primary-color);
+    font-family: "Space Mono", monospace;
     border-bottom: 1px dashed var(--primary-color);
+    word-spacing: var(--word-spacing);
     font-weight: bold;
     letter-spacing: var(--letter-spacing);
-    transition: all 0.3s ease;
-    color: var(--primary-color);
-    font-size: 17.6px;
-
-    &:hover {
-        border: none;
-        cursor: pointer;
-        color: var(--text-color);
+    position: relative;
+  }
+  
+  .navbar li a:hover {
+    color: var(--text-color);
+    border-bottom: none;
+  }
+  
+  /* Wavy underline animation */
+  .navbar li a:hover {
+    text-decoration: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='wavy-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift 0.4s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9f35' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-size: auto 5px;
+    background-position: 0 1.5rem;
+    background-repeat: repeat-x;
+    padding-bottom: 3px;
+  }
+  
+  /* Animation for wave movement */
+  @keyframes shift {
+    from {
+      transform: translateX(0);
     }
-}
+    to {
+      transform: translateX(-20px);
+    }
+  }
+  
+  
+/* gpt */
 
 .toggleswitch svg {
     color: var(--text-color);
@@ -108,7 +148,6 @@ header {
 
 .toggleswitch svg path {
     fill: var(--text-color);
-    /* Set fill to white or your desired color */
 }
 
 .sidecontent {
@@ -146,18 +185,6 @@ header {
     border-right: 0.08em solid var(--text-color);
 }
 
-.typewrite > .wrap {
-    /* border-right: 0.08em solid var(--text-color);  */
-    /* animation:  0.7s step-end infinite;
-    animation: none; */
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-
 .introduction .secparaintro {
     margin-top: 20px;
 }
@@ -170,13 +197,28 @@ header {
     color: var(--primary-color);
     text-decoration: none;
     border-bottom: 1px dashed var(--primary-color);
-}
-
-.clg:hover {
-    border: none;
+    position: relative;
+  }
+  
+  .clg:hover {
     color: var(--text-color);
-    font-weight: bold;
-}
+    border-bottom: none;
+    text-decoration: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='wavy-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift 0.4s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9f35' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-size: auto 5px;
+    background-position: 0 1.5rem;
+    background-repeat: repeat-x;
+    padding-bottom: 3px;
+  }
+  
+  @keyframes shift {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-20px);
+    }
+  }
 
 .introduction .myenjoyment {
     margin-top: 20px;
@@ -212,9 +254,6 @@ header {
 }
 
 .skillimgs {
-    /* display: flex;
-    flex-wrap: wrap;
-    width: 95%; */
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -306,6 +345,8 @@ body.light-theme {
         word-spacing: var(--word-spacing);
         font-weight: bold;
         letter-spacing: var(--letter-spacing);
+        color: var(--text-color);
+        border-bottom: none;
     }
 
     .sidebar li a:hover {
