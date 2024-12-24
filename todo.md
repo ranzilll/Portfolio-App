@@ -39,3 +39,21 @@
 - [ ] Update favicon of the site. 
 - [ ] Implement the library https://alvarotrigo.com/fullPage/ into the project.
 
+## Feedback
+Need to rewrite the skills section so it uses Javascript objects instead of manually adding all tools seperately.
+What you need to do is have an utils.js file which will have all your details so the tool name, and the path to the image:
+```
+const educationJSON = [
+    {
+        skill: 'HTML',
+        logo: '/html.png',
+    },
+    {
+        skill: 'CSS',
+        logo: '/css.png',
+    },
+];
+```
+
+And then map over this array of objects, the benefit this gives you is you have to write this once and just loop over it, 
+Right now you're bit is small so it might feel redundant, but trust me this is the way. 
