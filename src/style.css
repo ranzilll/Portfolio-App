@@ -138,12 +138,25 @@ header {
 .handemj:hover {
     transform: scale(1.2);
 }
-
+  
 .typew .typewrite {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
+    border-right: 0.08em solid var(--text-color);
 }
+
+.typewrite > .wrap {
+    /* border-right: 0.08em solid var(--text-color);  */
+    /* animation:  0.7s step-end infinite;
+    animation: none; */
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 
 .introduction .secparaintro {
     margin-top: 20px;
